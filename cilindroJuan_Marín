@@ -1,0 +1,19 @@
+Algoritmo volumen_area_cilindro_JCM
+	Escribir "¡Vamos a cálcular, fácil y rápido, el volúmen y área de un cilindro!" 
+	Escribir "¿Cuál es el radio (r) del cilindro en cm?"
+	Leer r
+	Si  r>0 Entonces
+		Escribir "¿Cuál es la altura (h) del cilindro en cm?"
+	SiNo
+		Escribir "ERROR, favor revisar el valor ingresado"
+		
+	FinSi
+	
+	Leer h
+	Si h>0 Entonces
+		Escribir "esta es el volumen del cilindro: ", redon(PI*h*(r*r))," cm3"
+		Escribir "esta es el área del cilindro: " , redon(2*PI*r*(r+h))," cm2"
+	SiNo
+		Escribir "ERROR, favor revisar el valor ingresado"
+	FinSi
+FinAlgoritmo
